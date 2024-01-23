@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            color: rgb(29, 151, 36);
+        }
+        /* whenever applying css to a class  */
+        /* use a dot(.) */
+
+        .red{
+            color: red;
+            background-color: black;
+        }
+
+        .blue{
+            color: blue;
+            background-color: antiquewhite;
+        }
+
+        /* whenever applying css to a id  */
+        /* use a hash(#) */
+
+        #uniq{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: aqua;
+            color: black;
+        }
+
+        #bg{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="red">SELECTORS</h1>
+    <h2>Class and Id</h2>
+    <!-- Whenever we have to group same css on many elements we use class -->
+    <ol>
+        <li class="red">Item</li> //red
+        <li>Item</li>
+        <li class="blue">Item</li> //blue
+        <li id="uniq">Unique Item</li>
+        <li>Item</li>
+        <li class="red">Item</li> //red
+        <li>Item</li>
+        <li>Item</li>
+        <li class="blue">Item</li> //blue
+        <li>Item</li>
+
+        <li class="red" id="bg">COMPOSED LI</li>
+    </ol>
+
+    
+</body>
+</html>
