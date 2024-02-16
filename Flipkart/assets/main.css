@@ -5,6 +5,7 @@
     font-weight: 400;
     margin: 0;
     padding: 0;
+    /* background-color: #F1F2F4; */
 }
 
 a{
@@ -12,20 +13,30 @@ a{
     display: inline-block;
     color: black;
 }
+i{
+    font-size: 1.2em;
+    /* padding-left: 3px; */
+}
 
 .container{
-    /* border: 1px solid yellow; */
     width: 100%;
-    margin-top: 10px;
 }
 
 .row{
     margin: 0 auto;
     width: 95%;
+    padding: 8px;
+    background-color: antiquewhite;
+
     /* border: 1px solid yellowgreen; */
     /* display: inline-block; */
 }
 
+.row2{
+    margin: 10px auto;
+    width: 85%;
+    padding: 10px;
+}
 .row::after{
     content: "";
     display: block;
@@ -52,7 +63,7 @@ a{
 }
 
 .col2{
-    margin-top: 10px;
+    padding: 10px;
     width: 35%;
     /* border: 1px solid red; */
     float: right;
@@ -63,13 +74,108 @@ a{
         display: inline-block;
         text-align: center;
         width: 15%;
+        padding: 10px;
+        font-size: 1em;
 }
 
 .search input[type="text"]{
     width: 100%;
-    height: 35px;
+    height: 2.2em;
     border-radius: 5px;
     border-color: transparent;
     background-color: #F0F5FF;
+    background-image: url("https://icon-library.com/images/search-for-icon/search-for-icon-1.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 25px 25px;
+    background-position-x: 1%;
     font-size: 1em;
+    padding-left: 7%;
 }
+
+
+/* sec1 */
+#sec1{
+    background-color:#F1F2F4;
+}
+
+#sec1 #product{
+    display: inline-block;
+    width: 10%;
+    text-align: center;
+    margin-left: 0.6em;
+}
+
+#sec1 #product img{
+    height: 80%;
+    width: 80%;
+}
+
+#sec1 h4{
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+/* section2 */
+
+#banner{
+    width: 100%;
+}
+
+#banner img{
+    width: 100%;
+}
+#section2{
+    background-color: #ededfc;
+    margin-top: 10px;
+    /* display: inline-block; */
+}
+
+#section2 .row3::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+#section2 h3{
+    padding-top: 10px;
+    margin: 0 1%;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+#section2 .product{
+    background-color: #fff;
+    text-align: center;
+    width: 14%;
+    border: 0.5px solid grey;
+    border-radius: 2%;
+    margin: 1% 1%;
+    float: left;
+}
+
+#section2 .product .p-img{
+    height: 70%;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+}
+#section2 .product img{
+   width: 100%;
+   height: 100%;
+}
+#section2 .product .p-desc{
+    height: 25%;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+}
+#section2 .p-desc h4{
+    padding: 2px;
+    font-weight: 400;
+}
+#section2 .p-desc h5{
+    padding: 2px;
+    font-weight: 800;
+}
+
