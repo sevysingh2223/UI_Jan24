@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="number"]:in-range{
+            background-color: rgb(9, 116, 62);
+        }
+        input[type="number"]:out-of-range{
+            background-color: coral;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Inrange And Outrange</h1>
+    <form action="">
+        <table>
+            <tr>
+                <td><label for="reg">Registration</label></td>
+                <td><input type="text" id="reg" value="PCM" name="user_reg" readonly disabled></td>
+            </tr>
+            <tr>
+                <td><label for="fname">First Name </label></td>
+                <td><input type="text" id="fname" name="first_name"  autofocus placeholder="Enter your first name"></td>
+            </tr>
+            <tr>
+                <td><label for="age">Age</label></td>
+                <td><input type="number" id="age" name="user_age" value="18" min="18" max="60"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

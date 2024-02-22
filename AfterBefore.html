@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input:in-range {
+        background-color: rgb(9, 116, 62);
+      }
+      input:in-range + .msg::after {
+        content: "Valid Age";
+      }
+      input:out-of-range {
+        background-color: coral;
+      }
+      input:out-of-range + .msg::after {
+        content: "Invalid Age";
+      }
+      p::after {
+        content: "Must See";
+        color: red;
+      }
+      p::before {
+        content: "Hey User Read this para";
+        color: rgb(46, 67, 15);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>After Before</h1>
+    <form action="">
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" min="18" max="60" />
+      <span class="msg"></span>
+    </form>
+
+    <hr />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel odio eos
+      commodi id eveniet pariatur expedita ullam <br />
+      voluptatem cupiditate tempora ex similique maxime, rem, voluptate
+      repudiandae libero perferendis sed! Laborum.
+    </p>
+  </body>
+</html>

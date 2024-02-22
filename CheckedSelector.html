@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        height: 100px;
+        width: 100px;
+        opacity: 0;
+      }
+      #male:checked ~ .man {
+        opacity: 1;
+      }
+      #female:checked ~ .woman {
+        opacity: 1;
+      }
+      img {
+        transition: 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Checked Selector</h1>
+    <label for="check1">Select Gender </label>
+    <input type="radio" id="male" name="gender" value="male" />
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female" />
+    <label for="female">Female</label>
+    <hr />
+    <img
+      src="https://tse2.mm.bing.net/th?id=OIP.VOnsU2XuuWeDj_0qNe2lCwEREs&pid=Api&P=0&h=180"
+      alt=""
+      class="man"
+    />
+    <img
+      src="https://tse1.mm.bing.net/th?id=OIP.k8K8knEPxXTaK1C4wWJd_AHaHa&pid=Api&P=0&h=180"
+      alt=""
+      class="woman"
+    />
+  </body>
+</html>

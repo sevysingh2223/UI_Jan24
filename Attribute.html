@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a::after {
+        content: "[ " attr(href) " ]";
+        font-size: 9px;
+        color: red;
+      }
+      a::before {
+        content: "[ " attr(title) " ]";
+        font-size: 9px;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <!-- create some a tag with different url and title -->
+      <a href="https://www.google.com" title="go to google">Google</a><br />
+      <a href="https://www.baidu.com" title="go to baidu">Baidu</a><br />
+      <a href="https://www.youtube.com" title="go to youtube">Youtube</a>
+    </div>
+  </body>
+</html>
