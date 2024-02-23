@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      body {
+        counter-reset: section;
+        /* counter-reset: p-num; */
+      }
+      h2::before {
+        counter-increment: section;
+        content: counter(section);
+        color: rgb(19, 75, 56);
+      }
+      /* p::after{
+        counter-increment: p-num;
+        content: counter(p-num);
+      } */
+    </style>
+  </head>
+  <body>
+    <h1>Counter Function</h1>
+    <div id="sec1">
+      <h2>Section</h2>
+      <p>This is a section number :</p>
+    </div>
+    <div id="sec2">
+      <h2>Section</h2>
+      <p>This is a section number :</p>
+    </div>
+    <div id="sec3">
+      <h2>Section</h2>
+      <p>This is a section number :</p>
+    </div>
+  </body>
+</html>
