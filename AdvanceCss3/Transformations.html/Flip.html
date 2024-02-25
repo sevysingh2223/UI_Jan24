@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 400px;
+        height: 500px;
+        border: 1px solid red;
+        margin: 0 auto;
+        position: relative;
+      }
+      .front {
+        background-color: blue;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        backface-visibility: hidden;
+      }
+      .back {
+        background-color: pink;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+      }
+      .box:hover .front {
+        transform: rotateY(180deg);
+      }
+      .box:hover .back {
+        transform: rotateY(180deg);
+      }
+      .front,
+      .back {
+        transition-duration: 5s;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flip Effect</h1>
+    <div class="box">
+      <div class="front">FRONT</div>
+      <div class="back">BACK</div>
+    </div>
+  </body>
+</html>
