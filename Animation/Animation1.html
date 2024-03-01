@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        border: 2px solid maroon;
+        height: 400px;
+        width: calc(100vw - 20px);
+      }
+      img {
+        height: 100%;
+        width: 20%;
+
+        /* animate */
+        /* animation-name: walking;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite; */
+
+        /* emmet for animation */
+        animation: walking  10s linear infinite;
+      }
+
+      @keyframes walking {
+        /* from{
+            transform: translateX(0px);
+        }
+        to{
+            transform: translateX(100%);
+        } */
+        0% {
+          transform: translateX(0px);
+        }
+        45% {
+          transform: translateX(1400px);
+        }
+        50% {
+          transform: translateX(1400px) rotateY(180deg);
+        }
+        100% {
+          transform: translateX(0px) rotateY(180deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img src="Person.gif" alt="" />
+    </div>
+  </body>
+</html>

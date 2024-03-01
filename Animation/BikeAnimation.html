@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 1800px;
+        height: 900px;
+        border: 1px solid grey;
+        margin: 0 auto;
+      }
+      img {
+        width: 15%;
+        height: 20%;
+        animation: bikeRiding 10s infinite linear;
+      }
+
+      @keyframes bikeRiding {
+        0% {
+          transform: translate(0px, 0px) rotate(0deg);
+        }
+        22% {
+          transform: translate(1500px, 0px) rotate(0deg);
+        }
+        25% {
+          transform: translate(1500px, 0px) rotate(90deg);
+        }
+        47% {
+          transform: translate(1500px, 600px) rotate(90deg);
+        }
+        50% {
+          transform: translate(1500px, 600px) rotateY(180deg);
+        }
+        72% {
+          transform: translate(0px, 600px) rotateY(180deg);
+        }
+        75% {
+          transform: translate(0px, 600px) rotate(-90deg);
+        }
+        100% {
+          transform: translate(0px, 0px) rotate(-90deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img src="Bike.gif" alt="" />
+    </div>
+  </body>
+</html>
